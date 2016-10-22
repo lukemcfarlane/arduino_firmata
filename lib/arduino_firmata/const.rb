@@ -18,15 +18,16 @@ module ArduinoFirmata
     OPEN = 1
   end
 
-  INPUT  = 0
-  OUTPUT = 1
-  ANALOG = 2
-  PWM    = 3
-  SERVO  = 4
-  SHIFT  = 5
-  I2C    = 6
-  LOW    = 0
-  HIGH   = 1
+  INPUT         = 0
+  OUTPUT        = 1
+  ANALOG        = 2
+  PWM           = 3
+  SERVO         = 4
+  SHIFT         = 5
+  I2C           = 6
+  INPUT_PULLUP  = 11
+  LOW           = 0
+  HIGH          = 1
 
   MAX_DATA_BYTES  = 32
   DIGITAL_MESSAGE = 0x90 # send data for a digital port
