@@ -51,7 +51,11 @@ class TestArduinoFirmata < MiniTest::Test
 
   def test_pin_mode
     0.upto(13).each do |pin|
-      mode = [ArduinoFirmata::OUTPUT, ArduinoFirmata::INPUT].sample
+      mode = [
+        ArduinoFirmata::OUTPUT,
+        ArduinoFirmata::INPUT,
+        ArduinoFirmata::INPUT_PULLUP
+      ].sample
       assert @arduino.pin_mode(pin, mode) == mode
     end
   end
