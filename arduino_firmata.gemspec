@@ -22,7 +22,7 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'minitest'
   gem.add_development_dependency 'backports'
 
-  gem.add_dependency 'serialport', '>= 1.1.0'
+  gem.add_dependency 'serialport', '>= 1.3.1'
   gem.add_dependency 'args_parser', '>= 0.1.4'
   gem.add_dependency 'event_emitter', '>= 0.2.4'
 end
